@@ -1,0 +1,1522 @@
+chart:
+  files:
+  - data: IyBQYXR0ZXJucyB0byBpZ25vcmUgd2hlbiBidWlsZGluZyBwYWNrYWdlcy4KIyBUaGlzIHN1cHBvcnRzIHNoZWxsIGdsb2IgbWF0Y2hpbmcsIHJlbGF0aXZlIHBhdGggbWF0Y2hpbmcsIGFuZAojIG5lZ2F0aW9uIChwcmVmaXhlZCB3aXRoICEpLiBPbmx5IG9uZSBwYXR0ZXJuIHBlciBsaW5lLgouRFNfU3RvcmUKIyBDb21tb24gVkNTIGRpcnMKLmdpdC8KLmdpdGlnbm9yZQouYnpyLwouYnpyaWdub3JlCi5oZy8KLmhnaWdub3JlCi5zdm4vCiMgQ29tbW9uIGJhY2t1cCBmaWxlcwoqLnN3cAoqLmJhawoqLnRtcAoqfgojIFZhcmlvdXMgSURFcwoucHJvamVjdAouaWRlYS8KKi50bXByb2oKLnZzY29kZS8K
+    name: .helmignore
+  - data: IyBMb2tpLVN0YWNrIEhlbG0gQ2hhcnQKCiMjIFByZXJlcXVpc2l0ZXMKCk1ha2Ugc3VyZSB5b3UgaGF2ZSBIZWxtIFtpbnN0YWxsZWRdKGh0dHBzOi8vaGVsbS5zaC9kb2NzL3VzaW5nX2hlbG0vI2luc3RhbGxpbmctaGVsbSkgaW5zdGFsbGVkLgoKIyMgR2V0IFJlcG8gSW5mbwoKYGBgY29uc29sZQpoZWxtIHJlcG8gYWRkIGdyYWZhbmEgaHR0cHM6Ly9ncmFmYW5hLmdpdGh1Yi5pby9oZWxtLWNoYXJ0cwpoZWxtIHJlcG8gdXBkYXRlCmBgYAoKX1NlZSBbaGVsbSByZXBvXShodHRwczovL2hlbG0uc2gvZG9jcy9oZWxtL2hlbG1fcmVwby8pIGZvciBjb21tYW5kIGRvY3VtZW50YXRpb24uXwoKIyMgRGVwbG95IExva2kgYW5kIFByb210YWlsIHRvIHlvdXIgY2x1c3RlcgoKIyMjIERlcGxveSB3aXRoIGRlZmF1bHQgY29uZmlnCgpgYGBiYXNoCmhlbG0gdXBncmFkZSAtLWluc3RhbGwgbG9raSBncmFmYW5hL2xva2ktc3RhY2sKYGBgCgojIyMgRGVwbG95IGluIGEgY3VzdG9tIG5hbWVzcGFjZQoKYGBgYmFzaApoZWxtIHVwZ3JhZGUgLS1pbnN0YWxsIGxva2kgLS1uYW1lc3BhY2U9bG9raS1zdGFjayBncmFmYW5hL2xva2ktc3RhY2sKYGBgCgojIyMgRGVwbG95IHdpdGggY3VzdG9tIGNvbmZpZwoKYGBgYmFzaApoZWxtIHVwZ3JhZGUgLS1pbnN0YWxsIGxva2kgZ3JhZmFuYS9sb2tpLXN0YWNrIC0tc2V0ICJrZXkxPXZhbDEsa2V5Mj12YWwyLC4uLiIKYGBgCgojIyBEZXBsb3kgTG9raSBhbmQgRmx1ZW50IEJpdCB0byB5b3VyIGNsdXN0ZXIKCmBgYGJhc2gKaGVsbSB1cGdyYWRlIC0taW5zdGFsbCBsb2tpIGxva2kvbG9raS1zdGFjayBcCiAgICAtLXNldCBmbHVlbnQtYml0LmVuYWJsZWQ9dHJ1ZSxwcm9tdGFpbC5lbmFibGVkPWZhbHNlCmBgYAoKIyMgRGVwbG95IEdyYWZhbmEgdG8geW91ciBjbHVzdGVyCgpUaGUgY2hhcnQgbG9raS1zdGFjayBjb250YWlucyBhIHByZS1jb25maWd1cmVkIEdyYWZhbmEsIHNpbXBseSB1c2UgYC0tc2V0IGdyYWZhbmEuZW5hYmxlZD10cnVlYAoKVG8gZ2V0IHRoZSBhZG1pbiBwYXNzd29yZCBmb3IgdGhlIEdyYWZhbmEgcG9kLCBydW4gdGhlIGZvbGxvd2luZyBjb21tYW5kOgoKYGBgYmFzaAprdWJlY3RsIGdldCBzZWNyZXQgLS1uYW1lc3BhY2UgPFlPVVItTkFNRVNQQUNFPiBsb2tpLWdyYWZhbmEgLW8ganNvbnBhdGg9InsuZGF0YS5hZG1pbi1wYXNzd29yZH0iIHwgYmFzZTY0IC0tZGVjb2RlIDsgZWNobwpgYGAKClRvIGFjY2VzcyB0aGUgR3JhZmFuYSBVSSwgcnVuIHRoZSBmb2xsb3dpbmcgY29tbWFuZDoKCmBgYGJhc2gKa3ViZWN0bCBwb3J0LWZvcndhcmQgLS1uYW1lc3BhY2UgPFlPVVItTkFNRVNQQUNFPiBzZXJ2aWNlL2xva2ktZ3JhZmFuYSAzMDAwOjgwCmBgYAoKTmF2aWdhdGUgdG8gPGh0dHA6Ly9sb2NhbGhvc3Q6MzAwMD4gYW5kIGxvZ2luIHdpdGggYGFkbWluYCBhbmQgdGhlIHBhc3N3b3JkIG91dHB1dCBhYm92ZS4KVGhlbiBmb2xsb3cgdGhlIFtpbnN0cnVjdGlvbnMgZm9yIGFkZGluZyB0aGUgbG9raSBkYXRhc291cmNlXSgvZG9jcy9nZXR0aW5nLXN0YXJ0ZWQvZ3JhZmFuYS5tZCksIHVzaW5nIHRoZSBVUkwgYGh0dHA6Ly9sb2tpOjMxMDAvYC4KCg==
+    name: README.md
+  - data: ZGVwZW5kZW5jaWVzOgotIG5hbWU6IGxva2kKICByZXBvc2l0b3J5OiBodHRwczovL2dyYWZhbmEuZ2l0aHViLmlvL2hlbG0tY2hhcnRzCiAgdmVyc2lvbjogMi4zLjAKLSBuYW1lOiBwcm9tdGFpbAogIHJlcG9zaXRvcnk6IGh0dHBzOi8vZ3JhZmFuYS5naXRodWIuaW8vaGVsbS1jaGFydHMKICB2ZXJzaW9uOiAyLjIuMAotIG5hbWU6IGZsdWVudC1iaXQKICByZXBvc2l0b3J5OiBodHRwczovL2dyYWZhbmEuZ2l0aHViLmlvL2hlbG0tY2hhcnRzCiAgdmVyc2lvbjogMi4yLjAKLSBuYW1lOiBncmFmYW5hCiAgcmVwb3NpdG9yeTogaHR0cHM6Ly9ncmFmYW5hLmdpdGh1Yi5pby9oZWxtLWNoYXJ0cwogIHZlcnNpb246IDUuNy4xMAotIG5hbWU6IHByb21ldGhldXMKICByZXBvc2l0b3J5OiBodHRwczovL3Byb21ldGhldXMtY29tbXVuaXR5LmdpdGh1Yi5pby9oZWxtLWNoYXJ0cwogIHZlcnNpb246IDExLjE2LjkKLSBuYW1lOiBmaWxlYmVhdAogIHJlcG9zaXRvcnk6IGh0dHBzOi8vaGVsbS5lbGFzdGljLmNvCiAgdmVyc2lvbjogNy44LjEKLSBuYW1lOiBsb2dzdGFzaAogIHJlcG9zaXRvcnk6IGh0dHBzOi8vaGVsbS5lbGFzdGljLmNvCiAgdmVyc2lvbjogNy44LjEKZGlnZXN0OiBzaGEyNTY6YmEzMDcwMTAwYTZkODA2NzQ2NGY0OTUwN2RjMTgxOGU5YmNkODM1YjU4ZjJlYmQwMjk5MTRkMzc0ZGYxMDczYgpnZW5lcmF0ZWQ6ICIyMDIxLTAxLTAzVDIxOjQ4OjIzLjgxNTg0NDA5NVoiCg==
+    name: requirements.lock
+  - data: ZGVwZW5kZW5jaWVzOgotIG5hbWU6ICJsb2tpIgogIGNvbmRpdGlvbjogbG9raS5lbmFibGVkCiAgcmVwb3NpdG9yeTogImh0dHBzOi8vZ3JhZmFuYS5naXRodWIuaW8vaGVsbS1jaGFydHMiCiAgdmVyc2lvbjogIl4yLjMuMCIKLSBuYW1lOiAicHJvbXRhaWwiCiAgY29uZGl0aW9uOiBwcm9tdGFpbC5lbmFibGVkCiAgcmVwb3NpdG9yeTogImh0dHBzOi8vZ3JhZmFuYS5naXRodWIuaW8vaGVsbS1jaGFydHMiCiAgdmVyc2lvbjogIl4yLjIuMCIKLSBuYW1lOiAiZmx1ZW50LWJpdCIKICBjb25kaXRpb246IGZsdWVudC1iaXQuZW5hYmxlZAogIHJlcG9zaXRvcnk6ICJodHRwczovL2dyYWZhbmEuZ2l0aHViLmlvL2hlbG0tY2hhcnRzIgogIHZlcnNpb246ICJeMi4yLjAiCi0gbmFtZTogImdyYWZhbmEiCiAgY29uZGl0aW9uOiBncmFmYW5hLmVuYWJsZWQKICB2ZXJzaW9uOiAifjUuNy4wIgogIHJlcG9zaXRvcnk6ICAiaHR0cHM6Ly9ncmFmYW5hLmdpdGh1Yi5pby9oZWxtLWNoYXJ0cyIKLSBuYW1lOiAicHJvbWV0aGV1cyIKICBjb25kaXRpb246IHByb21ldGhldXMuZW5hYmxlZAogIHZlcnNpb246ICJ+MTEuMTYuMCIKICByZXBvc2l0b3J5OiAgImh0dHBzOi8vcHJvbWV0aGV1cy1jb21tdW5pdHkuZ2l0aHViLmlvL2hlbG0tY2hhcnRzIgotIG5hbWU6ICJmaWxlYmVhdCIKICBjb25kaXRpb246IGZpbGViZWF0LmVuYWJsZWQKICB2ZXJzaW9uOiAifjcuOC4wIgogIHJlcG9zaXRvcnk6ICAiaHR0cHM6Ly9oZWxtLmVsYXN0aWMuY28iCi0gbmFtZTogImxvZ3N0YXNoIgogIGNvbmRpdGlvbjogbG9nc3Rhc2guZW5hYmxlZAogIHZlcnNpb246ICJ+Ny44LjAiCiAgcmVwb3NpdG9yeTogICJodHRwczovL2hlbG0uZWxhc3RpYy5jbyIK
+    name: requirements.yaml
+  lock:
+    dependencies:
+    - name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: 2.3.0
+    - name: promtail
+      repository: https://grafana.github.io/helm-charts
+      version: 2.2.0
+    - name: fluent-bit
+      repository: https://grafana.github.io/helm-charts
+      version: 2.2.0
+    - name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 5.7.10
+    - name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 11.16.9
+    - name: filebeat
+      repository: https://helm.elastic.co
+      version: 7.8.1
+    - name: logstash
+      repository: https://helm.elastic.co
+      version: 7.8.1
+    digest: sha256:ba3070100a6d8067464f49507dc1818e9bcd835b58f2ebd029914d374df1073b
+    generated: "2021-01-03T21:48:23.815844095Z"
+  metadata:
+    apiVersion: v1
+    appVersion: v2.1.0
+    dependencies:
+    - condition: loki.enabled
+      enabled: true
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: ^2.3.0
+    - condition: promtail.enabled
+      enabled: true
+      name: promtail
+      repository: https://grafana.github.io/helm-charts
+      version: ^2.2.0
+    description: 'Loki: like Prometheus, but for logs.'
+    home: https://grafana.com/loki
+    icon: https://raw.githubusercontent.com/grafana/loki/master/docs/sources/logo.png
+    kubeVersion: ^1.10.0-0
+    maintainers:
+    - email: lokiproject@googlegroups.com
+      name: Loki Maintainers
+    name: loki-stack
+    sources:
+    - https://github.com/grafana/loki
+    version: 2.3.1
+  schema: null
+  templates:
+  - data: VGhlIExva2kgc3RhY2sgaGFzIGJlZW4gZGVwbG95ZWQgdG8geW91ciBjbHVzdGVyLiBMb2tpIGNhbiBub3cgYmUgYWRkZWQgYXMgYSBkYXRhc291cmNlIGluIEdyYWZhbmEuCgpTZWUgaHR0cDovL2RvY3MuZ3JhZmFuYS5vcmcvZmVhdHVyZXMvZGF0YXNvdXJjZXMvbG9raS8gZm9yIG1vcmUgZGV0YWlsLgo=
+    name: templates/NOTES.txt
+  - data: e3svKiB2aW06IHNldCBmaWxldHlwZT1tdXN0YWNoZTogKi99fQp7ey8qCkV4cGFuZCB0aGUgbmFtZSBvZiB0aGUgY2hhcnQuCiovfX0Ke3stIGRlZmluZSAibG9raS1zdGFjay5uYW1lIiAtfX0Ke3stIGRlZmF1bHQgLkNoYXJ0Lk5hbWUgLlZhbHVlcy5uYW1lT3ZlcnJpZGUgfCB0cnVuYyA2MyB8IHRyaW1TdWZmaXggIi0iIC19fQp7ey0gZW5kIC19fQoKe3svKgpDcmVhdGUgYSBkZWZhdWx0IGZ1bGx5IHF1YWxpZmllZCBhcHAgbmFtZS4KV2UgdHJ1bmNhdGUgYXQgNjMgY2hhcnMgYmVjYXVzZSBzb21lIEt1YmVybmV0ZXMgbmFtZSBmaWVsZHMgYXJlIGxpbWl0ZWQgdG8gdGhpcyAoYnkgdGhlIEROUyBuYW1pbmcgc3BlYykuCklmIHJlbGVhc2UgbmFtZSBjb250YWlucyBjaGFydCBuYW1lIGl0IHdpbGwgYmUgdXNlZCBhcyBhIGZ1bGwgbmFtZS4KKi99fQp7ey0gZGVmaW5lICJsb2tpLXN0YWNrLmZ1bGxuYW1lIiAtfX0Ke3stIGlmIC5WYWx1ZXMuZnVsbG5hbWVPdmVycmlkZSAtfX0Ke3stIC5WYWx1ZXMuZnVsbG5hbWVPdmVycmlkZSB8IHRydW5jIDYzIHwgdHJpbVN1ZmZpeCAiLSIgLX19Cnt7LSBlbHNlIC19fQp7ey0gJG5hbWUgOj0gZGVmYXVsdCAuQ2hhcnQuTmFtZSAuVmFsdWVzLm5hbWVPdmVycmlkZSAtfX0Ke3stIGlmIGNvbnRhaW5zICRuYW1lIC5SZWxlYXNlLk5hbWUgLX19Cnt7LSAuUmVsZWFzZS5OYW1lIHwgdHJ1bmMgNjMgfCB0cmltU3VmZml4ICItIiAtfX0Ke3stIGVsc2UgLX19Cnt7LSBwcmludGYgIiVzLSVzIiAuUmVsZWFzZS5OYW1lICRuYW1lIHwgdHJ1bmMgNjMgfCB0cmltU3VmZml4ICItIiAtfX0Ke3stIGVuZCAtfX0Ke3stIGVuZCAtfX0Ke3stIGVuZCAtfX0KCnt7LyoKQ3JlYXRlIGNoYXJ0IG5hbWUgYW5kIHZlcnNpb24gYXMgdXNlZCBieSB0aGUgY2hhcnQgbGFiZWwuCiovfX0Ke3stIGRlZmluZSAibG9raS1zdGFjay5jaGFydCIgLX19Cnt7LSBwcmludGYgIiVzLSVzIiAuQ2hhcnQuTmFtZSAuQ2hhcnQuVmVyc2lvbiB8IHJlcGxhY2UgIisiICJfIiB8IHRydW5jIDYzIHwgdHJpbVN1ZmZpeCAiLSIgLX19Cnt7LSBlbmQgLX19Cgp7ey8qCk92ZXJyaWRlIHRoZSBuYW1pbmcgZGVmaW5lZCBieSB0aGUgcHJvbWV0aGV1cyBjaGFydC4KQWRkZWQgYXMgYSBmaXggZm9yIGh0dHBzOi8vZ2l0aHViLmNvbS9ncmFmYW5hL2xva2kvaXNzdWVzLzExNjkKKi99fQp7ey0gZGVmaW5lICJwcm9tZXRoZXVzLmZ1bGxuYW1lIiAtfX0Ke3stIHByaW50ZiAiJXMtJXMiIC5SZWxlYXNlLk5hbWUgInByb21ldGhldXMtc2VydmVyIiB8IHRydW5jIDYzIHwgdHJpbVN1ZmZpeCAiLSIgLX19Cnt7LSBlbmQgLX19Cgp7ey8qClRoZSBzZXJ2aWNlIG5hbWUgdG8gY29ubmVjdCB0byBMb2tpLiBEZWZhdWx0cyB0byB0aGUgc2FtZSBsb2dpYyBhcyAibG9raS5mdWxsbmFtZSIKKi99fQp7ey0gZGVmaW5lICJsb2tpLnNlcnZpY2VOYW1lIiAtfX0Ke3stIGlmIC5WYWx1ZXMubG9raS5zZXJ2aWNlTmFtZSAtfX0Ke3stIC5WYWx1ZXMubG9raS5zZXJ2aWNlTmFtZSAtfX0Ke3stIGVsc2UgaWYgLlZhbHVlcy5sb2tpLmZ1bGxuYW1lT3ZlcnJpZGUgLX19Cnt7LSAuVmFsdWVzLmxva2kuZnVsbG5hbWVPdmVycmlkZSB8IHRydW5jIDYzIHwgdHJpbVN1ZmZpeCAiLSIgLX19Cnt7LSBlbHNlIC19fQp7ey0gJG5hbWUgOj0gZGVmYXVsdCAibG9raSIgLlZhbHVlcy5sb2tpLm5hbWVPdmVycmlkZSAtfX0Ke3stIGlmIGNvbnRhaW5zICRuYW1lIC5SZWxlYXNlLk5hbWUgLX19Cnt7LSAuUmVsZWFzZS5OYW1lIHwgdHJ1bmMgNjMgfCB0cmltU3VmZml4ICItIiAtfX0Ke3stIGVsc2UgLX19Cnt7LSBwcmludGYgIiVzLSVzIiAuUmVsZWFzZS5OYW1lICRuYW1lIHwgdHJ1bmMgNjMgfCB0cmltU3VmZml4ICItIiAtfX0Ke3stIGVuZCAtfX0Ke3stIGVuZCAtfX0Ke3stIGVuZCAtfX0K
+    name: templates/_helpers.tpl
+  - data: e3stIGlmIC5WYWx1ZXMuZ3JhZmFuYS5zaWRlY2FyLmRhdGFzb3VyY2VzLmVuYWJsZWQgfX0KYXBpVmVyc2lvbjogdjEKa2luZDogQ29uZmlnTWFwCm1ldGFkYXRhOgogIG5hbWU6IHt7IHRlbXBsYXRlICJsb2tpLXN0YWNrLmZ1bGxuYW1lIiAuIH19CiAgbmFtZXNwYWNlOiB7eyAuUmVsZWFzZS5OYW1lc3BhY2UgfX0KICBsYWJlbHM6CiAgICBhcHA6IHt7IHRlbXBsYXRlICJsb2tpLXN0YWNrLm5hbWUiIC4gfX0KICAgIGNoYXJ0OiB7eyB0ZW1wbGF0ZSAibG9raS1zdGFjay5jaGFydCIgLiB9fQogICAgcmVsZWFzZToge3sgLlJlbGVhc2UuTmFtZSB9fQogICAgaGVyaXRhZ2U6IHt7IC5SZWxlYXNlLlNlcnZpY2UgfX0KICAgIGdyYWZhbmFfZGF0YXNvdXJjZTogIjEiCmRhdGE6CiAgbG9raS1zdGFjay1kYXRhc291cmNlLnlhbWw6IHwtCiAgICBhcGlWZXJzaW9uOiAxCiAgICBkYXRhc291cmNlczoKe3stIGlmIC5WYWx1ZXMubG9raS5lbmFibGVkIH19CiAgICAtIG5hbWU6IExva2kKICAgICAgdHlwZTogbG9raQogICAgICBhY2Nlc3M6IHByb3h5CiAgICAgIHVybDogaHR0cDovL3t7KGluY2x1ZGUgImxva2kuc2VydmljZU5hbWUiIC4pfX06e3sgLlZhbHVlcy5sb2tpLnNlcnZpY2UucG9ydCB9fQogICAgICB2ZXJzaW9uOiAxCnt7LSBlbmQgfX0Ke3stIGlmIC5WYWx1ZXMucHJvbWV0aGV1cy5lbmFibGVkIH19CiAgICAtIG5hbWU6IFByb21ldGhldXMKICAgICAgdHlwZTogcHJvbWV0aGV1cwogICAgICBhY2Nlc3M6IHByb3h5CiAgICAgIHVybDogaHR0cDovL3t7IGluY2x1ZGUgInByb21ldGhldXMuZnVsbG5hbWUiIC59fTp7eyAuVmFsdWVzLnByb21ldGhldXMuc2VydmVyLnNlcnZpY2Uuc2VydmljZVBvcnQgfX17eyAuVmFsdWVzLnByb21ldGhldXMuc2VydmVyLnByZWZpeFVSTCB9fQogICAgICB2ZXJzaW9uOiAxCnt7LSBlbmQgfX0Ke3stIGVuZCB9fQo=
+    name: templates/datasources.yaml
+  - data: YXBpVmVyc2lvbjogdjEKa2luZDogQ29uZmlnTWFwCm1ldGFkYXRhOgogIG5hbWU6IHt7IHRlbXBsYXRlICJsb2tpLXN0YWNrLmZ1bGxuYW1lIiAuIH19LXRlc3QKICBsYWJlbHM6CiAgICBhcHA6IHt7IHRlbXBsYXRlICJsb2tpLXN0YWNrLm5hbWUiIC4gfX0KICAgIGNoYXJ0OiB7eyB0ZW1wbGF0ZSAibG9raS1zdGFjay5jaGFydCIgLiB9fQogICAgcmVsZWFzZToge3sgLlJlbGVhc2UuTmFtZSB9fQogICAgaGVyaXRhZ2U6IHt7IC5SZWxlYXNlLlNlcnZpY2UgfX0KZGF0YToKICB0ZXN0LnNoOiB8CiAgICAjIS91c3IvYmluL2VudiBiYXNoCgogICAgTE9LSV9VUkk9Imh0dHA6Ly8ke0xPS0lfU0VSVklDRX06JHtMT0tJX1BPUlR9IgoKICAgIGZ1bmN0aW9uIHNldHVwKCkgewogICAgICBhcGsgYWRkIC11IGN1cmwganEKICAgICAgdW50aWwgKGN1cmwgLXMgJHtMT0tJX1VSSX0vYXBpL3Byb20vbGFiZWwvYXBwL3ZhbHVlcyB8IGpxIC1lICcudmFsdWVzW10gfCBzZWxlY3QoLiA9PSAibG9raSIpJyk7IGRvCiAgICAgICAgc2xlZXAgMQogICAgICBkb25lCiAgICB9CgogICAgQHRlc3QgIkhhcyBsYWJlbHMiIHsKICAgICAgY3VybCAtcyAke0xPS0lfVVJJfS9hcGkvcHJvbS9sYWJlbCB8IFwKICAgICAganEgLWUgJy52YWx1ZXNbXSB8IHNlbGVjdCguID09ICJhcHAiKScKICAgIH0KCiAgICBAdGVzdCAiUXVlcnkgbG9nIGVudHJ5IiB7CiAgICAgIGN1cmwgLXNHICR7TE9LSV9VUkl9L2FwaS9wcm9tL3F1ZXJ5P2xpbWl0PTEwIC0tZGF0YS11cmxlbmNvZGUgJ3F1ZXJ5PXthcHA9Imxva2kifScgfCBcCiAgICAgIGpxIC1lICcuc3RyZWFtc1tdLmVudHJpZXMgfCBsZW5ndGggPj0gMScKICAgIH0KCiAgICBAdGVzdCAiUHVzaCBsb2cgZW50cnkgbGVnYWN5IiB7CiAgICAgIGxvY2FsIHRpbWVzdGFtcD0kKGRhdGUgLUlzZWNvbmRzIC11IHwgc2VkICdzL1VUQy8uMDAwMDAwMDAwKzAwOjAwLycpCiAgICAgIGxvY2FsIGRhdGE9JChqcSAtbiAtLWFyZyB0aW1lc3RhbXAgIiR7dGltZXN0YW1wfSIgJ3sic3RyZWFtcyI6IFt7ImxhYmVscyI6ICJ7YXBwPVwibG9raS10ZXN0XCJ9IiwgImVudHJpZXMiOiBbeyJ0cyI6ICR0aW1lc3RhbXAsICJsaW5lIjogImZvb2JhciJ9XX1dfScpCgogICAgICBjdXJsIC1zIC1YIFBPU1QgLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgJHtMT0tJX1VSSX0vYXBpL3Byb20vcHVzaCAtZCAiJHtkYXRhfSIKCiAgICAgIGN1cmwgLXNHICR7TE9LSV9VUkl9L2FwaS9wcm9tL3F1ZXJ5P2xpbWl0PTEgLS1kYXRhLXVybGVuY29kZSAncXVlcnk9e2FwcD0ibG9raS10ZXN0In0nIHwgXAogICAgICBqcSAtZSAnLnN0cmVhbXNbXS5lbnRyaWVzW10ubGluZSA9PSAiZm9vYmFyIicKICAgIH0KCiAgICBAdGVzdCAiUHVzaCBsb2cgZW50cnkiIHsKICAgICAgbG9jYWwgdGltZXN0YW1wPSQoZGF0ZSArJXMwMDAwMDAwMDApCiAgICAgIGxvY2FsIGRhdGE9JChqcSAtbiAtLWFyZyB0aW1lc3RhbXAgIiR7dGltZXN0YW1wfSIgJ3sic3RyZWFtcyI6IFt7InN0cmVhbSI6IHsiYXBwIjogImxva2ktdGVzdCJ9LCAidmFsdWVzIjogW1skdGltZXN0YW1wLCAiZm9vYmFyIl1dfV19JykKCiAgICAgIGN1cmwgLXMgLVggUE9TVCAtSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiAke0xPS0lfVVJJfS9sb2tpL2FwaS92MS9wdXNoIC1kICIke2RhdGF9IgoKICAgICAgY3VybCAtc0cgJHtMT0tJX1VSSX0vYXBpL3Byb20vcXVlcnk/bGltaXQ9MSAtLWRhdGEtdXJsZW5jb2RlICdxdWVyeT17YXBwPSJsb2tpLXRlc3QifScgfCBcCiAgICAgIGpxIC1lICcuc3RyZWFtc1tdLmVudHJpZXNbXS5saW5lID09ICJmb29iYXIiJwogICAgfQoK
+    name: templates/tests/loki-test-configmap.yaml
+  - data: YXBpVmVyc2lvbjogdjEKa2luZDogUG9kCm1ldGFkYXRhOgogIGFubm90YXRpb25zOgogICAgImhlbG0uc2gvaG9vayI6IHRlc3Qtc3VjY2VzcwogIGxhYmVsczoKICAgIGFwcDoge3sgdGVtcGxhdGUgImxva2ktc3RhY2submFtZSIgLiB9fQogICAgY2hhcnQ6IHt7IHRlbXBsYXRlICJsb2tpLXN0YWNrLmNoYXJ0IiAuIH19CiAgICByZWxlYXNlOiB7eyAuUmVsZWFzZS5OYW1lIH19CiAgICBoZXJpdGFnZToge3sgLlJlbGVhc2UuU2VydmljZSB9fQogIG5hbWU6IHt7IHRlbXBsYXRlICJsb2tpLXN0YWNrLmZ1bGxuYW1lIiAuIH19LXRlc3QKc3BlYzoKICBjb250YWluZXJzOgogIC0gbmFtZTogdGVzdAogICAgaW1hZ2U6IGJhdHMvYmF0czp2MS4xLjAKICAgIGFyZ3M6CiAgICAtIC92YXIvbGliL2xva2kvdGVzdC5zaAogICAgZW52OgogICAgLSBuYW1lOiBMT0tJX1NFUlZJQ0UKICAgICAgdmFsdWU6IHt7IHRlbXBsYXRlICJsb2tpLnNlcnZpY2VOYW1lIiAuIH19CiAgICAtIG5hbWU6IExPS0lfUE9SVAogICAgICB2YWx1ZTogInt7IC5WYWx1ZXMubG9raS5zZXJ2aWNlLnBvcnQgfX0iCiAgICB2b2x1bWVNb3VudHM6CiAgICAtIG5hbWU6IHRlc3RzCiAgICAgIG1vdW50UGF0aDogL3Zhci9saWIvbG9raQogIHJlc3RhcnRQb2xpY3k6IE5ldmVyCiAgdm9sdW1lczoKICAtIG5hbWU6IHRlc3RzCiAgICBjb25maWdNYXA6CiAgICAgIG5hbWU6IHt7IHRlbXBsYXRlICJsb2tpLXN0YWNrLmZ1bGxuYW1lIiAuIH19LXRlc3QK
+    name: templates/tests/loki-test-pod.yaml
+  values:
+    filebeat:
+      affinity: {}
+      enabled: false
+      envFrom: []
+      extraContainers: ""
+      extraEnvs: []
+      extraInitContainers: []
+      extraVolumeMounts: []
+      extraVolumes: []
+      filebeatConfig:
+        filebeat.yml: |
+          # logging.level: debug
+          filebeat.inputs:
+          - type: container
+            paths:
+              - /var/log/containers/*.log
+            processors:
+            - add_kubernetes_metadata:
+                host: ${NODE_NAME}
+                matchers:
+                - logs_path:
+                    logs_path: "/var/log/containers/"
+          output.logstash:
+            hosts: ["logstash-loki:5044"]
+      fullnameOverride: ""
+      global: {}
+      hostNetworking: false
+      hostPathRoot: /var/lib
+      image: docker.elastic.co/beats/filebeat
+      imagePullPolicy: IfNotPresent
+      imagePullSecrets: []
+      imageTag: 7.8.1
+      labels: {}
+      livenessProbe:
+        exec:
+          command:
+          - sh
+          - -c
+          - |
+            #!/usr/bin/env bash -e
+            curl --fail 127.0.0.1:5066
+        failureThreshold: 3
+        initialDelaySeconds: 10
+        periodSeconds: 10
+        timeoutSeconds: 5
+      managedServiceAccount: true
+      nameOverride: ""
+      nodeSelector: {}
+      podAnnotations: {}
+      podSecurityContext:
+        privileged: false
+        runAsUser: 0
+      priorityClassName: ""
+      readinessProbe:
+        exec:
+          command:
+          - sh
+          - -c
+          - |
+            #!/usr/bin/env bash -e
+            filebeat test output
+        failureThreshold: 3
+        initialDelaySeconds: 10
+        periodSeconds: 10
+        timeoutSeconds: 5
+      resources:
+        limits:
+          cpu: 1000m
+          memory: 200Mi
+        requests:
+          cpu: 100m
+          memory: 100Mi
+      secretMounts: []
+      serviceAccount: ""
+      serviceAccountAnnotations: {}
+      terminationGracePeriod: 30
+      tolerations: []
+      updateStrategy: RollingUpdate
+    fluent-bit:
+      affinity: {}
+      annotations: {}
+      config:
+        autoKubernetesLabels: false
+        batchSize: 1048576
+        batchWait: 1
+        k8sLoggingExclude: "Off"
+        k8sLoggingParser: "Off"
+        labelMap:
+          kubernetes:
+            container_name: container
+            host: node
+            labels:
+              app: app
+              release: release
+            namespace_name: namespace
+            pod_name: instance
+          stream: stream
+        labels: '{job="fluent-bit"}'
+        lineFormat: json
+        loglevel: warn
+        memBufLimit: 5MB
+        port: 2020
+        removeKeys:
+        - kubernetes
+        - stream
+        tenantID: '""'
+      deploymentStrategy: RollingUpdate
+      enabled: false
+      global: {}
+      image:
+        pullPolicy: IfNotPresent
+        repository: grafana/fluent-bit-plugin-loki
+        tag: 2.1.0-amd64
+      loki:
+        serviceName: ""
+        servicePath: /api/prom/push
+        servicePort: 3100
+        serviceScheme: http
+      nameOverride: fluent-bit-loki
+      nodeSelector: {}
+      podAnnotations:
+        prometheus.io/path: /api/v1/metrics/prometheus
+        prometheus.io/port: "2020"
+        prometheus.io/scrape: "true"
+      podLabels: {}
+      rbac:
+        create: true
+        pspEnabled: true
+      resources:
+        limits:
+          memory: 100Mi
+        requests:
+          cpu: 100m
+          memory: 100Mi
+      serviceAccount:
+        create: true
+        name: null
+      serviceMonitor:
+        additionalLabels: {}
+        annotations: {}
+        enabled: false
+        interval: ""
+      tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/master
+      volumeMounts:
+      - mountPath: /var/log
+        name: varlog
+      - mountPath: /var/lib/docker/containers
+        name: varlibdockercontainers
+        readOnly: true
+      volumes:
+      - hostPath:
+          path: /var/log
+        name: varlog
+      - hostPath:
+          path: /var/lib/docker/containers
+        name: varlibdockercontainers
+    grafana:
+      admin:
+        existingSecret: ""
+        passwordKey: admin-password
+        userKey: admin-user
+      adminUser: admin
+      affinity: {}
+      dashboardProviders: {}
+      dashboards: {}
+      dashboardsConfigMaps: {}
+      datasources: {}
+      deploymentStrategy:
+        type: RollingUpdate
+      downloadDashboards:
+        env: {}
+        resources: {}
+      downloadDashboardsImage:
+        pullPolicy: IfNotPresent
+        repository: curlimages/curl
+        sha: ""
+        tag: 7.70.0
+      enabled: false
+      env: {}
+      envFromSecret: ""
+      envRenderSecret: {}
+      envValueFrom: {}
+      extraConfigmapMounts: []
+      extraContainerVolumes: []
+      extraContainers: ""
+      extraEmptyDirMounts: []
+      extraExposePorts: []
+      extraInitContainers: []
+      extraSecretMounts: []
+      extraVolumeMounts: []
+      global: {}
+      grafana.ini:
+        analytics:
+          check_for_updates: true
+        grafana_net:
+          url: https://grafana.net
+        log:
+          mode: console
+        paths:
+          data: /var/lib/grafana/data
+          logs: /var/log/grafana
+          plugins: /var/lib/grafana/plugins
+          provisioning: /etc/grafana/provisioning
+      hostAliases: []
+      image:
+        pullPolicy: IfNotPresent
+        repository: grafana/grafana
+        sha: ""
+        tag: 6.7.0
+      imageRenderer:
+        enabled: false
+        env: {}
+        hostAliases: []
+        image:
+          pullPolicy: Always
+          repository: grafana/grafana-image-renderer
+          sha: ""
+          tag: latest
+        networkPolicy:
+          limitEgress: false
+          limitIngress: true
+        podPortName: http
+        priorityClassName: ""
+        replicas: 1
+        resources: {}
+        revisionHistoryLimit: 10
+        securityContext: {}
+        service:
+          port: 8081
+          portName: http
+      ingress:
+        annotations: {}
+        enabled: false
+        extraPaths: []
+        hosts:
+        - chart-example.local
+        labels: {}
+        path: /
+        tls: []
+      initChownData:
+        enabled: true
+        image:
+          pullPolicy: IfNotPresent
+          repository: busybox
+          sha: ""
+          tag: 1.31.1
+        resources: {}
+      ldap:
+        config: ""
+        enabled: false
+        existingSecret: ""
+      livenessProbe:
+        failureThreshold: 10
+        httpGet:
+          path: /api/health
+          port: 3000
+        initialDelaySeconds: 60
+        timeoutSeconds: 30
+      namespaceOverride: ""
+      nodeSelector: {}
+      notifiers: {}
+      persistence:
+        accessModes:
+        - ReadWriteOnce
+        enabled: false
+        finalizers:
+        - kubernetes.io/pvc-protection
+        size: 10Gi
+        type: pvc
+      plugins: []
+      podDisruptionBudget: {}
+      podPortName: grafana
+      rbac:
+        create: true
+        extraClusterRoleRules: []
+        extraRoleRules: []
+        namespaced: false
+        pspEnabled: true
+        pspUseAppArmor: true
+      readinessProbe:
+        httpGet:
+          path: /api/health
+          port: 3000
+      replicas: 1
+      resources: {}
+      revisionHistoryLimit: 10
+      securityContext:
+        fsGroup: 472
+        runAsGroup: 472
+        runAsUser: 472
+      service:
+        annotations: {}
+        labels: {}
+        port: 80
+        portName: service
+        targetPort: 3000
+        type: ClusterIP
+      serviceAccount:
+        create: true
+        name: null
+        nameTest: null
+      serviceMonitor:
+        enabled: false
+        interval: 1m
+        labels: {}
+        path: /metrics
+        relabelings: []
+        scrapeTimeout: 30s
+      sidecar:
+        dashboards:
+          SCProvider: true
+          defaultFolderName: null
+          enabled: false
+          folder: /tmp/dashboards
+          label: grafana_dashboard
+          provider:
+            allowUiUpdates: false
+            disableDelete: false
+            folder: ""
+            foldersFromFilesStructure: false
+            name: sidecarProvider
+            orgid: 1
+            type: file
+          searchNamespace: null
+        datasources:
+          enabled: true
+          label: grafana_datasource
+          searchNamespace: null
+        enableUniqueFilenames: false
+        image:
+          repository: kiwigrid/k8s-sidecar
+          sha: ""
+          tag: 0.1.209
+        imagePullPolicy: IfNotPresent
+        notifiers:
+          enabled: false
+          label: grafana_notifier
+          searchNamespace: null
+        resources: {}
+      smtp:
+        existingSecret: ""
+        passwordKey: password
+        userKey: user
+      testFramework:
+        enabled: true
+        image: bats/bats
+        imagePullPolicy: IfNotPresent
+        securityContext: {}
+        tag: v1.1.0
+      tolerations: []
+    logstash:
+      antiAffinity: hard
+      antiAffinityTopologyKey: kubernetes.io/hostname
+      enabled: false
+      envFrom: []
+      extraContainers: ""
+      extraEnvs: []
+      extraInitContainers: ""
+      extraPorts: []
+      extraVolumeMounts: ""
+      extraVolumes: ""
+      filters:
+        main: |-
+          filter {
+            if [kubernetes] {
+              mutate {
+                add_field => {
+                  "container_name" => "%{[kubernetes][container][name]}"
+                  "namespace" => "%{[kubernetes][namespace]}"
+                  "pod" => "%{[kubernetes][pod][name]}"
+                }
+                replace => { "host" => "%{[kubernetes][node][name]}"}
+              }
+            }
+            mutate {
+              remove_field => ["tags"]
+            }
+          }
+      fullnameOverride: ""
+      global: {}
+      httpPort: 9600
+      image: grafana/logstash-output-loki
+      imagePullPolicy: IfNotPresent
+      imagePullSecrets: []
+      imageTag: 1.0.1
+      labels: {}
+      lifecycle: {}
+      livenessProbe:
+        failureThreshold: 3
+        httpGet:
+          path: /
+          port: http
+        initialDelaySeconds: 300
+        periodSeconds: 10
+        successThreshold: 1
+        timeoutSeconds: 5
+      logstashConfig: {}
+      logstashJavaOpts: -Xmx1g -Xms1g
+      logstashPipeline: {}
+      maxUnavailable: 1
+      nameOverride: ""
+      nodeAffinity: {}
+      nodeSelector: {}
+      outputs:
+        main: |-
+          output {
+            loki {
+              url => "http://loki:3100/loki/api/v1/push"
+              #username => "test"
+              #password => "test"
+            }
+            # stdout { codec => rubydebug }
+          }
+      persistence:
+        annotations: {}
+        enabled: false
+      podAnnotations: {}
+      podManagementPolicy: Parallel
+      podSecurityContext:
+        fsGroup: 1000
+        runAsUser: 1000
+      podSecurityPolicy:
+        create: false
+        name: ""
+        spec:
+          fsGroup:
+            rule: RunAsAny
+          privileged: true
+          runAsUser:
+            rule: RunAsAny
+          seLinux:
+            rule: RunAsAny
+          supplementalGroups:
+            rule: RunAsAny
+          volumes:
+          - secret
+          - configMap
+          - persistentVolumeClaim
+      priorityClassName: ""
+      rbac:
+        create: false
+        serviceAccountAnnotations: {}
+        serviceAccountName: ""
+      readinessProbe:
+        failureThreshold: 3
+        httpGet:
+          path: /
+          port: http
+        initialDelaySeconds: 60
+        periodSeconds: 10
+        successThreshold: 3
+        timeoutSeconds: 5
+      replicas: 1
+      resources:
+        limits:
+          cpu: 1000m
+          memory: 1536Mi
+        requests:
+          cpu: 100m
+          memory: 1536Mi
+      schedulerName: ""
+      secretMounts: []
+      secrets: []
+      securityContext:
+        capabilities:
+          drop:
+          - ALL
+        runAsNonRoot: true
+        runAsUser: 1000
+      service: {}
+      terminationGracePeriod: 120
+      tolerations: []
+      updateStrategy: RollingUpdate
+      volumeClaimTemplate:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+    loki:
+      affinity: {}
+      alerting_groups: []
+      annotations: {}
+      client: {}
+      config:
+        auth_enabled: false
+        chunk_store_config:
+          max_look_back_period: 0s
+        compactor:
+          shared_store: filesystem
+          working_directory: /data/loki/boltdb-shipper-compactor
+        ingester:
+          chunk_block_size: 262144
+          chunk_idle_period: 3m
+          chunk_retain_period: 1m
+          lifecycler:
+            ring:
+              kvstore:
+                store: inmemory
+              replication_factor: 1
+          max_transfer_retries: 0
+        limits_config:
+          enforce_metric_name: false
+          reject_old_samples: true
+          reject_old_samples_max_age: 168h
+        schema_config:
+          configs:
+          - from: "2020-10-24"
+            index:
+              period: 24h
+              prefix: index_
+            object_store: filesystem
+            schema: v11
+            store: boltdb-shipper
+        server:
+          http_listen_port: 3100
+        storage_config:
+          boltdb_shipper:
+            active_index_directory: /data/loki/boltdb-shipper-active
+            cache_location: /data/loki/boltdb-shipper-cache
+            cache_ttl: 24h
+            shared_store: filesystem
+          filesystem:
+            directory: /data/loki/chunks
+        table_manager:
+          retention_deletes_enabled: false
+          retention_period: 0s
+      enabled: true
+      env: []
+      extraArgs: {}
+      extraContainers: []
+      extraPorts: []
+      extraVolumeMounts: []
+      extraVolumes: []
+      global: {}
+      image:
+        pullPolicy: IfNotPresent
+        repository: grafana/loki
+        tag: 2.1.0
+      ingress:
+        annotations: {}
+        enabled: false
+        hosts:
+        - host: chart-example.local
+          paths: []
+        tls: []
+      initContainers: []
+      livenessProbe:
+        httpGet:
+          path: /ready
+          port: http-metrics
+        initialDelaySeconds: 45
+      networkPolicy:
+        enabled: false
+      nodeSelector: {}
+      persistence:
+        accessModes:
+        - ReadWriteOnce
+        annotations: {}
+        enabled: false
+        size: 10Gi
+      podAnnotations:
+        prometheus.io/port: http-metrics
+        prometheus.io/scrape: "true"
+      podDisruptionBudget: {}
+      podLabels: {}
+      podManagementPolicy: OrderedReady
+      rbac:
+        create: true
+        pspEnabled: true
+      readinessProbe:
+        httpGet:
+          path: /ready
+          port: http-metrics
+        initialDelaySeconds: 45
+      replicas: 1
+      resources: {}
+      securityContext:
+        fsGroup: 10001
+        runAsGroup: 10001
+        runAsNonRoot: true
+        runAsUser: 10001
+      service:
+        annotations: {}
+        labels: {}
+        port: 3100
+        targetPort: http-metrics
+        type: ClusterIP
+      serviceAccount:
+        annotations: {}
+        create: true
+      serviceMonitor:
+        additionalLabels: {}
+        annotations: {}
+        enabled: false
+        interval: ""
+      terminationGracePeriodSeconds: 4800
+      tolerations: []
+      tracing: {}
+      updateStrategy:
+        type: RollingUpdate
+    prometheus:
+      alertRelabelConfigs: null
+      alertmanager:
+        affinity: {}
+        baseURL: http://localhost:9093
+        configFileName: alertmanager.yml
+        configFromSecret: ""
+        configMapOverrideName: ""
+        deploymentAnnotations: {}
+        emptyDir:
+          sizeLimit: ""
+        enabled: true
+        extraArgs: {}
+        extraEnv: {}
+        extraInitContainers: []
+        extraSecretMounts: []
+        image:
+          pullPolicy: IfNotPresent
+          repository: prom/alertmanager
+          tag: v0.21.0
+        ingress:
+          annotations: {}
+          enabled: false
+          extraLabels: {}
+          extraPaths: []
+          hosts: []
+          tls: []
+        name: alertmanager
+        nodeSelector: {}
+        persistentVolume:
+          accessModes:
+          - ReadWriteOnce
+          annotations: {}
+          enabled: true
+          existingClaim: ""
+          mountPath: /data
+          size: 2Gi
+          subPath: ""
+        podAnnotations: {}
+        podDisruptionBudget:
+          enabled: false
+          maxUnavailable: 1
+        podLabels: {}
+        podSecurityPolicy:
+          annotations: {}
+        prefixURL: ""
+        priorityClassName: ""
+        replicaCount: 1
+        resources: {}
+        securityContext:
+          fsGroup: 65534
+          runAsGroup: 65534
+          runAsNonRoot: true
+          runAsUser: 65534
+        service:
+          annotations: {}
+          clusterIP: ""
+          externalIPs: []
+          labels: {}
+          loadBalancerIP: ""
+          loadBalancerSourceRanges: []
+          servicePort: 80
+          sessionAffinity: None
+          type: ClusterIP
+        statefulSet:
+          annotations: {}
+          enabled: false
+          headless:
+            annotations: {}
+            enableMeshPeer: false
+            labels: {}
+            servicePort: 80
+          labels: {}
+          podManagementPolicy: OrderedReady
+        tolerations: []
+        useClusterRole: true
+        useExistingRole: false
+      alertmanagerFiles:
+        alertmanager.yml:
+          global: {}
+          receivers:
+          - name: default-receiver
+          route:
+            group_interval: 5m
+            group_wait: 10s
+            receiver: default-receiver
+            repeat_interval: 3h
+      configmapReload:
+        alertmanager:
+          enabled: true
+          extraArgs: {}
+          extraConfigmapMounts: []
+          extraVolumeDirs: []
+          image:
+            pullPolicy: IfNotPresent
+            repository: jimmidyson/configmap-reload
+            tag: v0.4.0
+          name: configmap-reload
+          resources: {}
+        prometheus:
+          enabled: true
+          extraArgs: {}
+          extraConfigmapMounts: []
+          extraVolumeDirs: []
+          image:
+            pullPolicy: IfNotPresent
+            repository: jimmidyson/configmap-reload
+            tag: v0.4.0
+          name: configmap-reload
+          resources: {}
+      enabled: false
+      extraScrapeConfigs: null
+      forceNamespace: null
+      global: {}
+      imagePullSecrets: null
+      kube-state-metrics:
+        affinity: {}
+        autosharding:
+          enabled: false
+        collectors:
+          certificatesigningrequests: true
+          configmaps: true
+          cronjobs: true
+          daemonsets: true
+          deployments: true
+          endpoints: true
+          horizontalpodautoscalers: true
+          ingresses: true
+          jobs: true
+          limitranges: true
+          mutatingwebhookconfigurations: true
+          namespaces: true
+          networkpolicies: true
+          nodes: true
+          persistentvolumeclaims: true
+          persistentvolumes: true
+          poddisruptionbudgets: true
+          pods: true
+          replicasets: true
+          replicationcontrollers: true
+          resourcequotas: true
+          secrets: true
+          services: true
+          statefulsets: true
+          storageclasses: true
+          validatingwebhookconfigurations: true
+          verticalpodautoscalers: false
+          volumeattachments: true
+        customLabels: {}
+        global: {}
+        hostNetwork: false
+        image:
+          pullPolicy: IfNotPresent
+          repository: quay.io/coreos/kube-state-metrics
+          tag: v1.9.7
+        imagePullSecrets: []
+        kubeTargetVersionOverride: ""
+        namespaceOverride: ""
+        nodeSelector: {}
+        podAnnotations: {}
+        podDisruptionBudget: {}
+        podSecurityPolicy:
+          additionalVolumes: []
+          annotations: {}
+          enabled: false
+        prometheus:
+          monitor:
+            additionalLabels: {}
+            enabled: false
+            honorLabels: false
+            namespace: ""
+        prometheusScrape: true
+        rbac:
+          create: true
+        replicas: 1
+        resources: {}
+        securityContext:
+          enabled: true
+          fsGroup: 65534
+          runAsGroup: 65534
+          runAsUser: 65534
+        service:
+          annotations: {}
+          loadBalancerIP: ""
+          nodePort: 0
+          port: 8080
+          type: ClusterIP
+        serviceAccount:
+          annotations: {}
+          create: true
+          imagePullSecrets: []
+          name: null
+        tolerations: []
+      kubeStateMetrics:
+        enabled: true
+      networkPolicy:
+        enabled: false
+      nodeExporter:
+        enabled: true
+        extraArgs: {}
+        extraConfigmapMounts: []
+        extraHostPathMounts: []
+        extraInitContainers: []
+        hostNetwork: true
+        hostPID: true
+        image:
+          pullPolicy: IfNotPresent
+          repository: prom/node-exporter
+          tag: v1.0.1
+        name: node-exporter
+        nodeSelector: {}
+        pod:
+          labels: {}
+        podAnnotations: {}
+        podDisruptionBudget:
+          enabled: false
+          maxUnavailable: 1
+        podSecurityPolicy:
+          annotations: {}
+        priorityClassName: ""
+        resources: {}
+        securityContext: {}
+        service:
+          annotations:
+            prometheus.io/scrape: "true"
+          clusterIP: None
+          externalIPs: []
+          hostPort: 9100
+          labels: {}
+          loadBalancerIP: ""
+          loadBalancerSourceRanges: []
+          servicePort: 9100
+          type: ClusterIP
+        tolerations: []
+        updateStrategy:
+          type: RollingUpdate
+      podSecurityPolicy:
+        enabled: false
+      pushgateway:
+        deploymentAnnotations: {}
+        enabled: true
+        extraArgs: {}
+        extraInitContainers: []
+        image:
+          pullPolicy: IfNotPresent
+          repository: prom/pushgateway
+          tag: v1.2.0
+        ingress:
+          annotations: {}
+          enabled: false
+          extraPaths: []
+          hosts: []
+          tls: []
+        name: pushgateway
+        nodeSelector: {}
+        persistentVolume:
+          accessModes:
+          - ReadWriteOnce
+          annotations: {}
+          enabled: false
+          existingClaim: ""
+          mountPath: /data
+          size: 2Gi
+          subPath: ""
+        podAnnotations: {}
+        podDisruptionBudget:
+          enabled: false
+          maxUnavailable: 1
+        podLabels: {}
+        podSecurityPolicy:
+          annotations: {}
+        priorityClassName: ""
+        replicaCount: 1
+        resources: {}
+        securityContext:
+          runAsNonRoot: true
+          runAsUser: 65534
+        service:
+          annotations:
+            prometheus.io/probe: pushgateway
+          clusterIP: ""
+          externalIPs: []
+          labels: {}
+          loadBalancerIP: ""
+          loadBalancerSourceRanges: []
+          servicePort: 9091
+          type: ClusterIP
+        tolerations: []
+      rbac:
+        create: true
+      server:
+        affinity: {}
+        alertmanagers: []
+        baseURL: ""
+        configMapOverrideName: ""
+        configPath: /etc/config/prometheus.yml
+        deploymentAnnotations: {}
+        emptyDir:
+          sizeLimit: ""
+        enableServiceLinks: true
+        enabled: true
+        env: []
+        extraArgs: {}
+        extraConfigmapMounts: []
+        extraFlags:
+        - web.enable-lifecycle
+        extraHostPathMounts: []
+        extraInitContainers: []
+        extraSecretMounts: []
+        extraVolumeMounts: []
+        extraVolumes: []
+        global:
+          evaluation_interval: 1m
+          scrape_interval: 1m
+          scrape_timeout: 10s
+        hostAliases: []
+        image:
+          pullPolicy: IfNotPresent
+          repository: prom/prometheus
+          tag: v2.21.0
+        ingress:
+          annotations: {}
+          enabled: false
+          extraLabels: {}
+          extraPaths: []
+          hosts: []
+          tls: []
+        livenessProbeFailureThreshold: 3
+        livenessProbeInitialDelay: 30
+        livenessProbePeriodSeconds: 15
+        livenessProbeSuccessThreshold: 1
+        livenessProbeTimeout: 30
+        name: server
+        nodeSelector: {}
+        persistentVolume:
+          accessModes:
+          - ReadWriteOnce
+          annotations: {}
+          enabled: true
+          existingClaim: ""
+          mountPath: /data
+          size: 8Gi
+          subPath: ""
+        podAnnotations: {}
+        podDisruptionBudget:
+          enabled: false
+          maxUnavailable: 1
+        podLabels: {}
+        podSecurityPolicy:
+          annotations: {}
+        prefixURL: ""
+        priorityClassName: ""
+        readinessProbeFailureThreshold: 3
+        readinessProbeInitialDelay: 30
+        readinessProbePeriodSeconds: 5
+        readinessProbeSuccessThreshold: 1
+        readinessProbeTimeout: 30
+        remoteRead: []
+        remoteWrite: []
+        replicaCount: 1
+        resources: {}
+        retention: 15d
+        securityContext:
+          fsGroup: 65534
+          runAsGroup: 65534
+          runAsNonRoot: true
+          runAsUser: 65534
+        service:
+          annotations: {}
+          clusterIP: ""
+          externalIPs: []
+          gRPC:
+            enabled: false
+            servicePort: 10901
+          labels: {}
+          loadBalancerIP: ""
+          loadBalancerSourceRanges: []
+          servicePort: 80
+          sessionAffinity: None
+          statefulsetReplica:
+            enabled: false
+            replica: 0
+          type: ClusterIP
+        sidecarContainers: null
+        statefulSet:
+          annotations: {}
+          enabled: false
+          headless:
+            annotations: {}
+            gRPC:
+              enabled: false
+              servicePort: 10901
+            labels: {}
+            servicePort: 80
+          labels: {}
+          podManagementPolicy: OrderedReady
+        terminationGracePeriodSeconds: 300
+        tolerations: []
+        verticalAutoscaler:
+          enabled: false
+      serverFiles:
+        alerting_rules.yml: {}
+        alerts: {}
+        prometheus.yml:
+          rule_files:
+          - /etc/config/recording_rules.yml
+          - /etc/config/alerting_rules.yml
+          - /etc/config/rules
+          - /etc/config/alerts
+          scrape_configs:
+          - job_name: prometheus
+            static_configs:
+            - targets:
+              - localhost:9090
+          - bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+            job_name: kubernetes-apiservers
+            kubernetes_sd_configs:
+            - role: endpoints
+            relabel_configs:
+            - action: keep
+              regex: default;kubernetes;https
+              source_labels:
+              - __meta_kubernetes_namespace
+              - __meta_kubernetes_service_name
+              - __meta_kubernetes_endpoint_port_name
+            scheme: https
+            tls_config:
+              ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+              insecure_skip_verify: true
+          - bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+            job_name: kubernetes-nodes
+            kubernetes_sd_configs:
+            - role: node
+            relabel_configs:
+            - action: labelmap
+              regex: __meta_kubernetes_node_label_(.+)
+            - replacement: kubernetes.default.svc:443
+              target_label: __address__
+            - regex: (.+)
+              replacement: /api/v1/nodes/$1/proxy/metrics
+              source_labels:
+              - __meta_kubernetes_node_name
+              target_label: __metrics_path__
+            scheme: https
+            tls_config:
+              ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+              insecure_skip_verify: true
+          - bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+            job_name: kubernetes-nodes-cadvisor
+            kubernetes_sd_configs:
+            - role: node
+            relabel_configs:
+            - action: labelmap
+              regex: __meta_kubernetes_node_label_(.+)
+            - replacement: kubernetes.default.svc:443
+              target_label: __address__
+            - regex: (.+)
+              replacement: /api/v1/nodes/$1/proxy/metrics/cadvisor
+              source_labels:
+              - __meta_kubernetes_node_name
+              target_label: __metrics_path__
+            scheme: https
+            tls_config:
+              ca_file: /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+              insecure_skip_verify: true
+          - job_name: kubernetes-service-endpoints
+            kubernetes_sd_configs:
+            - role: endpoints
+            relabel_configs:
+            - action: keep
+              regex: true
+              source_labels:
+              - __meta_kubernetes_service_annotation_prometheus_io_scrape
+            - action: replace
+              regex: (https?)
+              source_labels:
+              - __meta_kubernetes_service_annotation_prometheus_io_scheme
+              target_label: __scheme__
+            - action: replace
+              regex: (.+)
+              source_labels:
+              - __meta_kubernetes_service_annotation_prometheus_io_path
+              target_label: __metrics_path__
+            - action: replace
+              regex: ([^:]+)(?::\d+)?;(\d+)
+              replacement: $1:$2
+              source_labels:
+              - __address__
+              - __meta_kubernetes_service_annotation_prometheus_io_port
+              target_label: __address__
+            - action: labelmap
+              regex: __meta_kubernetes_service_label_(.+)
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_namespace
+              target_label: kubernetes_namespace
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_service_name
+              target_label: kubernetes_name
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_pod_node_name
+              target_label: kubernetes_node
+          - job_name: kubernetes-service-endpoints-slow
+            kubernetes_sd_configs:
+            - role: endpoints
+            relabel_configs:
+            - action: keep
+              regex: true
+              source_labels:
+              - __meta_kubernetes_service_annotation_prometheus_io_scrape_slow
+            - action: replace
+              regex: (https?)
+              source_labels:
+              - __meta_kubernetes_service_annotation_prometheus_io_scheme
+              target_label: __scheme__
+            - action: replace
+              regex: (.+)
+              source_labels:
+              - __meta_kubernetes_service_annotation_prometheus_io_path
+              target_label: __metrics_path__
+            - action: replace
+              regex: ([^:]+)(?::\d+)?;(\d+)
+              replacement: $1:$2
+              source_labels:
+              - __address__
+              - __meta_kubernetes_service_annotation_prometheus_io_port
+              target_label: __address__
+            - action: labelmap
+              regex: __meta_kubernetes_service_label_(.+)
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_namespace
+              target_label: kubernetes_namespace
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_service_name
+              target_label: kubernetes_name
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_pod_node_name
+              target_label: kubernetes_node
+            scrape_interval: 5m
+            scrape_timeout: 30s
+          - honor_labels: true
+            job_name: prometheus-pushgateway
+            kubernetes_sd_configs:
+            - role: service
+            relabel_configs:
+            - action: keep
+              regex: pushgateway
+              source_labels:
+              - __meta_kubernetes_service_annotation_prometheus_io_probe
+          - job_name: kubernetes-services
+            kubernetes_sd_configs:
+            - role: service
+            metrics_path: /probe
+            params:
+              module:
+              - http_2xx
+            relabel_configs:
+            - action: keep
+              regex: true
+              source_labels:
+              - __meta_kubernetes_service_annotation_prometheus_io_probe
+            - source_labels:
+              - __address__
+              target_label: __param_target
+            - replacement: blackbox
+              target_label: __address__
+            - source_labels:
+              - __param_target
+              target_label: instance
+            - action: labelmap
+              regex: __meta_kubernetes_service_label_(.+)
+            - source_labels:
+              - __meta_kubernetes_namespace
+              target_label: kubernetes_namespace
+            - source_labels:
+              - __meta_kubernetes_service_name
+              target_label: kubernetes_name
+          - job_name: kubernetes-pods
+            kubernetes_sd_configs:
+            - role: pod
+            relabel_configs:
+            - action: keep
+              regex: true
+              source_labels:
+              - __meta_kubernetes_pod_annotation_prometheus_io_scrape
+            - action: replace
+              regex: (.+)
+              source_labels:
+              - __meta_kubernetes_pod_annotation_prometheus_io_path
+              target_label: __metrics_path__
+            - action: replace
+              regex: ([^:]+)(?::\d+)?;(\d+)
+              replacement: $1:$2
+              source_labels:
+              - __address__
+              - __meta_kubernetes_pod_annotation_prometheus_io_port
+              target_label: __address__
+            - action: labelmap
+              regex: __meta_kubernetes_pod_label_(.+)
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_namespace
+              target_label: kubernetes_namespace
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_pod_name
+              target_label: kubernetes_pod_name
+            - action: drop
+              regex: Pending|Succeeded|Failed
+              source_labels:
+              - __meta_kubernetes_pod_phase
+          - job_name: kubernetes-pods-slow
+            kubernetes_sd_configs:
+            - role: pod
+            relabel_configs:
+            - action: keep
+              regex: true
+              source_labels:
+              - __meta_kubernetes_pod_annotation_prometheus_io_scrape_slow
+            - action: replace
+              regex: (.+)
+              source_labels:
+              - __meta_kubernetes_pod_annotation_prometheus_io_path
+              target_label: __metrics_path__
+            - action: replace
+              regex: ([^:]+)(?::\d+)?;(\d+)
+              replacement: $1:$2
+              source_labels:
+              - __address__
+              - __meta_kubernetes_pod_annotation_prometheus_io_port
+              target_label: __address__
+            - action: labelmap
+              regex: __meta_kubernetes_pod_label_(.+)
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_namespace
+              target_label: kubernetes_namespace
+            - action: replace
+              source_labels:
+              - __meta_kubernetes_pod_name
+              target_label: kubernetes_pod_name
+            - action: drop
+              regex: Pending|Succeeded|Failed
+              source_labels:
+              - __meta_kubernetes_pod_phase
+            scrape_interval: 5m
+            scrape_timeout: 30s
+        recording_rules.yml: {}
+        rules: {}
+      serviceAccounts:
+        alertmanager:
+          annotations: {}
+          create: true
+          name: null
+        nodeExporter:
+          annotations: {}
+          create: true
+          name: null
+        pushgateway:
+          annotations: {}
+          create: true
+          name: null
+        server:
+          annotations: {}
+          create: true
+          name: null
+    promtail:
+      affinity: {}
+      annotations: {}
+      config:
+        client:
+          backoff_config:
+            max_period: 5m
+            max_retries: 10
+            min_period: 500ms
+          batchsize: 1048576
+          batchwait: 1s
+          external_labels: {}
+          timeout: 10s
+        positions:
+          filename: /run/promtail/positions.yaml
+        server:
+          http_listen_port: 3101
+        target_config:
+          sync_period: 10s
+      deploymentStrategy: {}
+      enabled: true
+      env: []
+      extraCommandlineArgs: []
+      extraScrapeConfigs: []
+      extraVolumeMounts: []
+      extraVolumes: []
+      global: {}
+      image:
+        pullPolicy: IfNotPresent
+        repository: grafana/promtail
+        tag: 2.1.0
+      initContainer:
+        enabled: false
+        fsInotifyMaxUserInstances: 128
+      livenessProbe: {}
+      loki:
+        serviceName: ""
+        servicePort: 3100
+        serviceScheme: http
+      nameOverride: promtail
+      nodeSelector: {}
+      pipelineStages:
+      - docker: {}
+      podAnnotations:
+        prometheus.io/port: http-metrics
+        prometheus.io/scrape: "true"
+      podLabels: {}
+      podSecurityPolicy:
+        allowPrivilegeEscalation: false
+        fsGroup:
+          rule: RunAsAny
+        hostIPC: false
+        hostNetwork: false
+        hostPID: false
+        privileged: false
+        readOnlyRootFilesystem: true
+        requiredDropCapabilities:
+        - ALL
+        runAsUser:
+          rule: RunAsAny
+        seLinux:
+          rule: RunAsAny
+        supplementalGroups:
+          rule: RunAsAny
+        volumes:
+        - secret
+        - configMap
+        - hostPath
+        - projected
+        - downwardAPI
+        - emptyDir
+      rbac:
+        create: true
+        pspEnabled: true
+      readinessProbe:
+        failureThreshold: 5
+        httpGet:
+          path: /ready
+          port: http-metrics
+        initialDelaySeconds: 10
+        periodSeconds: 10
+        successThreshold: 1
+        timeoutSeconds: 1
+      resources: {}
+      scrapeConfigs: []
+      securityContext:
+        readOnlyRootFilesystem: true
+        runAsGroup: 0
+        runAsUser: 0
+      serviceAccount:
+        create: true
+      serviceMonitor:
+        additionalLabels: {}
+        annotations: {}
+        enabled: false
+        interval: ""
+      syslogService:
+        annotations: {}
+        enabled: false
+        labels: {}
+        port: 1514
+        type: ClusterIP
+      tolerations:
+      - effect: NoSchedule
+        key: node-role.kubernetes.io/master
+        operator: Exists
+      volumeMounts:
+      - mountPath: /var/lib/docker/containers
+        name: docker
+        readOnly: true
+      - mountPath: /var/log/pods
+        name: pods
+        readOnly: true
+      volumes:
+      - hostPath:
+          path: /var/lib/docker/containers
+        name: docker
+      - hostPath:
+          path: /var/log/pods
+        name: pods
+hooks:
+- events:
+  - test
+  kind: Pod
+  last_run:
+    completed_at: ""
+    phase: ""
+    started_at: ""
+  manifest: |-
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      annotations:
+        "helm.sh/hook": test-success
+      labels:
+        app: loki-stack
+        chart: loki-stack-2.3.1
+        release: loki
+        heritage: Helm
+      name: loki-loki-stack-test
+    spec:
+      containers:
+      - name: test
+        image: bats/bats:v1.1.0
+        args:
+        - /var/lib/loki/test.sh
+        env:
+        - name: LOKI_SERVICE
+          value: loki
+        - name: LOKI_PORT
+          value: "3100"
+        volumeMounts:
+        - name: tests
+          mountPath: /var/lib/loki
+      restartPolicy: Never
+      volumes:
+      - name: tests
+        configMap:
+          name: loki-loki-stack-test
+  name: loki-loki-stack-test
+  path: loki-stack/templates/tests/loki-test-pod.yaml
+info:
+  deleted: ""
+  description: Dry run complete
+  first_deployed: "2021-02-04T07:46:59.001915672Z"
+  last_deployed: "2021-02-04T07:46:59.001915672Z"
+  notes: |
+    The Loki stack has been deployed to your cluster. Loki can now be added as a datasource in Grafana.
+
+    See http://docs.grafana.org/features/datasources/loki/ for more detail.
+  status: pending-install
+manifest: "---\n# Source: loki-stack/charts/loki/templates/podsecuritypolicy.yaml\napiVersion: policy/v1beta1\nkind: PodSecurityPolicy\nmetadata:\n  name: loki\n  labels:\n    app: loki\n    chart: loki-2.3.0\n    heritage: Helm\n    release: loki\nspec:\n  privileged: false\n  allowPrivilegeEscalation: false\n  volumes:\n    - 'configMap'\n    - 'emptyDir'\n    - 'persistentVolumeClaim'\n    - 'secret'\n    - 'projected'\n    - 'downwardAPI'\n  hostNetwork: false\n  hostIPC: false\n  hostPID: false\n  runAsUser:\n    rule: 'MustRunAsNonRoot'\n  seLinux:\n    rule: 'RunAsAny'\n  supplementalGroups:\n    rule: 'MustRunAs'\n    ranges:\n    - min: 1\n      max: 65535\n  fsGroup:\n    rule: 'MustRunAs'\n    ranges:\n    - min: 1\n      max: 65535\n  readOnlyRootFilesystem: true\n  requiredDropCapabilities:\n    - ALL\n---\n# Source: loki-stack/charts/promtail/templates/podsecuritypolicy.yaml\napiVersion: policy/v1beta1\nkind: PodSecurityPolicy\nmetadata:\n  name: loki-promtail\n  labels:\n    app: promtail\n    chart: promtail-2.2.0\n    heritage: Helm\n    release: loki\nspec:\n  allowPrivilegeEscalation: false\n  fsGroup:\n    rule: RunAsAny\n  hostIPC: false\n  hostNetwork: false\n  hostPID: false\n  privileged: false\n  readOnlyRootFilesystem: true\n  requiredDropCapabilities:\n  - ALL\n  runAsUser:\n    rule: RunAsAny\n  seLinux:\n    rule: RunAsAny\n  supplementalGroups:\n    rule: RunAsAny\n  volumes:\n  - secret\n  - configMap\n  - hostPath\n  - projected\n  - downwardAPI\n  - emptyDir\n---\n# Source: loki-stack/charts/loki/templates/serviceaccount.yaml\napiVersion: v1\nkind: ServiceAccount\nmetadata:\n  labels:\n    app: loki\n    chart: loki-2.3.0\n    heritage: Helm\n    release: loki\n  annotations:\n    {}\n  name: loki\n  namespace: default\n---\n# Source: loki-stack/charts/promtail/templates/serviceaccount.yaml\napiVersion: v1\nkind: ServiceAccount\nmetadata:\n  labels:\n    app: promtail\n    chart: promtail-2.2.0\n    heritage: Helm\n    release: loki\n  name: loki-promtail\n  namespace: default\n---\n# Source: loki-stack/charts/loki/templates/secret.yaml\napiVersion: v1\nkind: Secret\nmetadata:\n  name: loki\n  namespace: default\n  labels:\n    app: loki\n    chart: loki-2.3.0\n    release: loki\n    heritage: Helm\ndata:\n  loki.yaml: YXV0aF9lbmFibGVkOiBmYWxzZQpjaHVua19zdG9yZV9jb25maWc6CiAgbWF4X2xvb2tfYmFja19wZXJpb2Q6IDBzCmNvbXBhY3RvcjoKICBzaGFyZWRfc3RvcmU6IGZpbGVzeXN0ZW0KICB3b3JraW5nX2RpcmVjdG9yeTogL2RhdGEvbG9raS9ib2x0ZGItc2hpcHBlci1jb21wYWN0b3IKaW5nZXN0ZXI6CiAgY2h1bmtfYmxvY2tfc2l6ZTogMjYyMTQ0CiAgY2h1bmtfaWRsZV9wZXJpb2Q6IDNtCiAgY2h1bmtfcmV0YWluX3BlcmlvZDogMW0KICBsaWZlY3ljbGVyOgogICAgcmluZzoKICAgICAga3ZzdG9yZToKICAgICAgICBzdG9yZTogaW5tZW1vcnkKICAgICAgcmVwbGljYXRpb25fZmFjdG9yOiAxCiAgbWF4X3RyYW5zZmVyX3JldHJpZXM6IDAKbGltaXRzX2NvbmZpZzoKICBlbmZvcmNlX21ldHJpY19uYW1lOiBmYWxzZQogIHJlamVjdF9vbGRfc2FtcGxlczogdHJ1ZQogIHJlamVjdF9vbGRfc2FtcGxlc19tYXhfYWdlOiAxNjhoCnNjaGVtYV9jb25maWc6CiAgY29uZmlnczoKICAtIGZyb206ICIyMDIwLTEwLTI0IgogICAgaW5kZXg6CiAgICAgIHBlcmlvZDogMjRoCiAgICAgIHByZWZpeDogaW5kZXhfCiAgICBvYmplY3Rfc3RvcmU6IGZpbGVzeXN0ZW0KICAgIHNjaGVtYTogdjExCiAgICBzdG9yZTogYm9sdGRiLXNoaXBwZXIKc2VydmVyOgogIGh0dHBfbGlzdGVuX3BvcnQ6IDMxMDAKc3RvcmFnZV9jb25maWc6CiAgYm9sdGRiX3NoaXBwZXI6CiAgICBhY3RpdmVfaW5kZXhfZGlyZWN0b3J5OiAvZGF0YS9sb2tpL2JvbHRkYi1zaGlwcGVyLWFjdGl2ZQogICAgY2FjaGVfbG9jYXRpb246IC9kYXRhL2xva2kvYm9sdGRiLXNoaXBwZXItY2FjaGUKICAgIGNhY2hlX3R0bDogMjRoCiAgICBzaGFyZWRfc3RvcmU6IGZpbGVzeXN0ZW0KICBmaWxlc3lzdGVtOgogICAgZGlyZWN0b3J5OiAvZGF0YS9sb2tpL2NodW5rcwp0YWJsZV9tYW5hZ2VyOgogIHJldGVudGlvbl9kZWxldGVzX2VuYWJsZWQ6IGZhbHNlCiAgcmV0ZW50aW9uX3BlcmlvZDogMHM=\n---\n# Source: loki-stack/charts/promtail/templates/configmap.yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: loki-promtail\n  namespace: default\n  labels:\n    app: promtail\n    chart: promtail-2.2.0\n    release: loki\n    heritage: Helm\ndata:\n  promtail.yaml: |\n    client:\n      backoff_config:\n        max_period: 5m\n        max_retries: 10\n        min_period: 500ms\n      batchsize: 1048576\n      batchwait: 1s\n      external_labels: {}\n      timeout: 10s\n    positions:\n      filename: /run/promtail/positions.yaml\n    server:\n      http_listen_port: 3101\n    target_config:\n      sync_period: 10s\n    scrape_configs:\n    - job_name: kubernetes-pods-name\n      pipeline_stages:\n        - docker: {}\n      kubernetes_sd_configs:\n      - role: pod\n      relabel_configs:\n      - source_labels:\n        - __meta_kubernetes_pod_label_name\n        target_label: __service__\n      - source_labels:\n        - __meta_kubernetes_pod_node_name\n        target_label: __host__\n      - action: drop\n        regex: ''\n        source_labels:\n        - __service__\n      - action: labelmap\n        regex: __meta_kubernetes_pod_label_(.+)\n      - action: replace\n        replacement: $1\n        separator: /\n        source_labels:\n        - __meta_kubernetes_namespace\n        - __service__\n        target_label: job\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_namespace\n        target_label: namespace\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_name\n        target_label: pod\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_container_name\n        target_label: container\n      - replacement: /var/log/pods/*$1/*.log\n        separator: /\n        source_labels:\n        - __meta_kubernetes_pod_uid\n        - __meta_kubernetes_pod_container_name\n        target_label: __path__\n    - job_name: kubernetes-pods-app\n      pipeline_stages:\n        - docker: {}\n      kubernetes_sd_configs:\n      - role: pod\n      relabel_configs:\n      - action: drop\n        regex: .+\n        source_labels:\n        - __meta_kubernetes_pod_label_name\n      - source_labels:\n        - __meta_kubernetes_pod_label_app\n        target_label: __service__\n      - source_labels:\n        - __meta_kubernetes_pod_node_name\n        target_label: __host__\n      - action: drop\n        regex: ''\n        source_labels:\n        - __service__\n      - action: labelmap\n        regex: __meta_kubernetes_pod_label_(.+)\n      - action: replace\n        replacement: $1\n        separator: /\n        source_labels:\n        - __meta_kubernetes_namespace\n        - __service__\n        target_label: job\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_namespace\n        target_label: namespace\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_name\n        target_label: pod\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_container_name\n        target_label: container\n      - replacement: /var/log/pods/*$1/*.log\n        separator: /\n        source_labels:\n        - __meta_kubernetes_pod_uid\n        - __meta_kubernetes_pod_container_name\n        target_label: __path__\n    - job_name: kubernetes-pods-direct-controllers\n      pipeline_stages:\n        - docker: {}\n      kubernetes_sd_configs:\n      - role: pod\n      relabel_configs:\n      - action: drop\n        regex: .+\n        separator: ''\n        source_labels:\n        - __meta_kubernetes_pod_label_name\n        - __meta_kubernetes_pod_label_app\n      - action: drop\n        regex: '[0-9a-z-.]+-[0-9a-f]{8,10}'\n        source_labels:\n        - __meta_kubernetes_pod_controller_name\n      - source_labels:\n        - __meta_kubernetes_pod_controller_name\n        target_label: __service__\n      - source_labels:\n        - __meta_kubernetes_pod_node_name\n        target_label: __host__\n      - action: drop\n        regex: ''\n        source_labels:\n        - __service__\n      - action: labelmap\n        regex: __meta_kubernetes_pod_label_(.+)\n      - action: replace\n        replacement: $1\n        separator: /\n        source_labels:\n        - __meta_kubernetes_namespace\n        - __service__\n        target_label: job\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_namespace\n        target_label: namespace\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_name\n        target_label: pod\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_container_name\n        target_label: container\n      - replacement: /var/log/pods/*$1/*.log\n        separator: /\n        source_labels:\n        - __meta_kubernetes_pod_uid\n        - __meta_kubernetes_pod_container_name\n        target_label: __path__\n    - job_name: kubernetes-pods-indirect-controller\n      pipeline_stages:\n        - docker: {}\n      kubernetes_sd_configs:\n      - role: pod\n      relabel_configs:\n      - action: drop\n        regex: .+\n        separator: ''\n        source_labels:\n        - __meta_kubernetes_pod_label_name\n        - __meta_kubernetes_pod_label_app\n      - action: keep\n        regex: '[0-9a-z-.]+-[0-9a-f]{8,10}'\n        source_labels:\n        - __meta_kubernetes_pod_controller_name\n      - action: replace\n        regex: '([0-9a-z-.]+)-[0-9a-f]{8,10}'\n        source_labels:\n        - __meta_kubernetes_pod_controller_name\n        target_label: __service__\n      - source_labels:\n        - __meta_kubernetes_pod_node_name\n        target_label: __host__\n      - action: drop\n        regex: ''\n        source_labels:\n        - __service__\n      - action: labelmap\n        regex: __meta_kubernetes_pod_label_(.+)\n      - action: replace\n        replacement: $1\n        separator: /\n        source_labels:\n        - __meta_kubernetes_namespace\n        - __service__\n        target_label: job\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_namespace\n        target_label: namespace\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_name\n        target_label: pod\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_container_name\n        target_label: container\n      - replacement: /var/log/pods/*$1/*.log\n        separator: /\n        source_labels:\n        - __meta_kubernetes_pod_uid\n        - __meta_kubernetes_pod_container_name\n        target_label: __path__\n    - job_name: kubernetes-pods-static\n      pipeline_stages:\n        - docker: {}\n      kubernetes_sd_configs:\n      - role: pod\n      relabel_configs:\n      - action: drop\n        regex: ''\n        source_labels:\n        - __meta_kubernetes_pod_annotation_kubernetes_io_config_mirror\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_label_component\n        target_label: __service__\n      - source_labels:\n        - __meta_kubernetes_pod_node_name\n        target_label: __host__\n      - action: drop\n        regex: ''\n        source_labels:\n        - __service__\n      - action: labelmap\n        regex: __meta_kubernetes_pod_label_(.+)\n      - action: replace\n        replacement: $1\n        separator: /\n        source_labels:\n        - __meta_kubernetes_namespace\n        - __service__\n        target_label: job\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_namespace\n        target_label: namespace\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_name\n        target_label: pod\n      - action: replace\n        source_labels:\n        - __meta_kubernetes_pod_container_name\n        target_label: container\n      - replacement: /var/log/pods/*$1/*.log\n        separator: /\n        source_labels:\n        - __meta_kubernetes_pod_annotation_kubernetes_io_config_mirror\n        - __meta_kubernetes_pod_container_name\n        target_label: __path__\n---\n# Source: loki-stack/templates/datasources.yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: loki-loki-stack\n  namespace: default\n  labels:\n    app: loki-stack\n    chart: loki-stack-2.3.1\n    release: loki\n    heritage: Helm\n    grafana_datasource: \"1\"\ndata:\n  loki-stack-datasource.yaml: |-\n    apiVersion: 1\n    datasources:\n    - name: Loki\n      type: loki\n      access: proxy\n      url: http://loki:3100\n      version: 1\n---\n# Source: loki-stack/templates/tests/loki-test-configmap.yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: loki-loki-stack-test\n  labels:\n    app: loki-stack\n    chart: loki-stack-2.3.1\n    release: loki\n    heritage: Helm\ndata:\n  test.sh: |\n    #!/usr/bin/env bash\n\n    LOKI_URI=\"http://${LOKI_SERVICE}:${LOKI_PORT}\"\n\n    function setup() {\n      apk add -u curl jq\n      until (curl -s ${LOKI_URI}/api/prom/label/app/values | jq -e '.values[] | select(. == \"loki\")'); do\n        sleep 1\n      done\n    }\n\n    @test \"Has labels\" {\n      curl -s ${LOKI_URI}/api/prom/label | \\\n      jq -e '.values[] | select(. == \"app\")'\n    }\n\n    @test \"Query log entry\" {\n      curl -sG ${LOKI_URI}/api/prom/query?limit=10 --data-urlencode 'query={app=\"loki\"}' | \\\n      jq -e '.streams[].entries | length >= 1'\n    }\n\n    @test \"Push log entry legacy\" {\n      local timestamp=$(date -Iseconds -u | sed 's/UTC/.000000000+00:00/')\n      local data=$(jq -n --arg timestamp \"${timestamp}\" '{\"streams\": [{\"labels\": \"{app=\\\"loki-test\\\"}\", \"entries\": [{\"ts\": $timestamp, \"line\": \"foobar\"}]}]}')\n\n      curl -s -X POST -H \"Content-Type: application/json\" ${LOKI_URI}/api/prom/push -d \"${data}\"\n\n      curl -sG ${LOKI_URI}/api/prom/query?limit=1 --data-urlencode 'query={app=\"loki-test\"}' | \\\n      jq -e '.streams[].entries[].line == \"foobar\"'\n    }\n\n    @test \"Push log entry\" {\n      local timestamp=$(date +%s000000000)\n      local data=$(jq -n --arg timestamp \"${timestamp}\" '{\"streams\": [{\"stream\": {\"app\": \"loki-test\"}, \"values\": [[$timestamp, \"foobar\"]]}]}')\n\n      curl -s -X POST -H \"Content-Type: application/json\" ${LOKI_URI}/loki/api/v1/push -d \"${data}\"\n\n      curl -sG ${LOKI_URI}/api/prom/query?limit=1 --data-urlencode 'query={app=\"loki-test\"}' | \\\n      jq -e '.streams[].entries[].line == \"foobar\"'\n    }\n---\n# Source: loki-stack/charts/promtail/templates/clusterrole.yaml\nkind: ClusterRole\napiVersion: rbac.authorization.k8s.io/v1\nmetadata:\n  labels:\n    app: promtail\n    chart: promtail-2.2.0\n    release: loki\n    heritage: Helm\n  name: loki-promtail-clusterrole\nrules:\n- apiGroups: [\"\"] # \"\" indicates the core API group\n  resources:\n  - nodes\n  - nodes/proxy\n  - services\n  - endpoints\n  - pods\n  verbs: [\"get\", \"watch\", \"list\"]\n---\n# Source: loki-stack/charts/promtail/templates/clusterrolebinding.yaml\nkind: ClusterRoleBinding\napiVersion: rbac.authorization.k8s.io/v1\nmetadata:\n  name: loki-promtail-clusterrolebinding\n  labels:\n    app: promtail\n    chart: promtail-2.2.0\n    release: loki\n    heritage: Helm\nsubjects:\n  - kind: ServiceAccount\n    name: loki-promtail\n    namespace: default\nroleRef:\n  kind: ClusterRole\n  name: loki-promtail-clusterrole\n  apiGroup: rbac.authorization.k8s.io\n---\n# Source: loki-stack/charts/loki/templates/role.yaml\napiVersion: rbac.authorization.k8s.io/v1\nkind: Role\nmetadata:\n  name: loki\n  namespace: default\n  labels:\n    app: loki\n    chart: loki-2.3.0\n    heritage: Helm\n    release: loki\nrules:\n- apiGroups:      ['extensions']\n  resources:      ['podsecuritypolicies']\n  verbs:          ['use']\n  resourceNames:  [loki]\n---\n# Source: loki-stack/charts/promtail/templates/role.yaml\napiVersion: rbac.authorization.k8s.io/v1\nkind: Role\nmetadata:\n  name: loki-promtail\n  namespace: default\n  labels:\n    app: promtail\n    chart: promtail-2.2.0\n    heritage: Helm\n    release: loki\nrules:\n- apiGroups:      ['extensions']\n  resources:      ['podsecuritypolicies']\n  verbs:          ['use']\n  resourceNames:  [loki-promtail]\n---\n# Source: loki-stack/charts/loki/templates/rolebinding.yaml\napiVersion: rbac.authorization.k8s.io/v1\nkind: RoleBinding\nmetadata:\n  name: loki\n  namespace: default\n  labels:\n    app: loki\n    chart: loki-2.3.0\n    heritage: Helm\n    release: loki\nroleRef:\n  apiGroup: rbac.authorization.k8s.io\n  kind: Role\n  name: loki\nsubjects:\n- kind: ServiceAccount\n  name: loki\n---\n# Source: loki-stack/charts/promtail/templates/rolebinding.yaml\napiVersion: rbac.authorization.k8s.io/v1\nkind: RoleBinding\nmetadata:\n  name: loki-promtail\n  namespace: default\n  labels:\n    app: promtail\n    chart: promtail-2.2.0\n    heritage: Helm\n    release: loki\nroleRef:\n  apiGroup: rbac.authorization.k8s.io\n  kind: Role\n  name: loki-promtail\nsubjects:\n- kind: ServiceAccount\n  name: loki-promtail\n---\n# Source: loki-stack/charts/loki/templates/service-headless.yaml\napiVersion: v1\nkind: Service\nmetadata:\n  name: loki-headless\n  namespace: default\n  labels:\n    app: loki\n    chart: loki-2.3.0\n    release: loki\n    heritage: Helm\n    variant: headless\nspec:\n  clusterIP: None\n  ports:\n    - port: 3100\n      protocol: TCP\n      name: http-metrics\n      targetPort: http-metrics\n  selector:\n    app: loki\n    release: loki\n---\n# Source: loki-stack/charts/loki/templates/service.yaml\napiVersion: v1\nkind: Service\nmetadata:\n  name: loki\n  namespace: default\n  labels:\n    app: loki\n    chart: loki-2.3.0\n    release: loki\n    heritage: Helm\n  annotations:\n    {}\nspec:\n  type: ClusterIP\n  ports:\n    - port: 3100\n      protocol: TCP\n      name: http-metrics\n      targetPort: http-metrics\n  selector:\n    app: loki\n    release: loki\n---\n# Source: loki-stack/charts/promtail/templates/daemonset.yaml\napiVersion: apps/v1\nkind: DaemonSet\nmetadata:\n  name: loki-promtail\n  namespace: default\n  labels:\n    app: promtail\n    chart: promtail-2.2.0\n    release: loki\n    heritage: Helm\n  annotations:\n    {}\nspec:\n  selector:\n    matchLabels:\n      app: promtail\n      release: loki\n  updateStrategy:\n    {}\n  template:\n    metadata:\n      labels:\n        app: promtail\n        release: loki\n      annotations:\n        checksum/config: 0a21a8ebfac7246cc8569fcc5960475d994984ba43235541646065913fb901ce\n        prometheus.io/port: http-metrics\n        prometheus.io/scrape: \"true\"\n    spec:\n      serviceAccountName: loki-promtail\n      containers:\n        - name: promtail\n          image: \"grafana/promtail:2.1.0\"\n          imagePullPolicy: IfNotPresent\n          args:\n            - \"-config.file=/etc/promtail/promtail.yaml\"\n            - \"-client.url=http://loki:3100/loki/api/v1/push\"\n          volumeMounts:\n            - name: config\n              mountPath: /etc/promtail\n            - name: run\n              mountPath: /run/promtail\n            - mountPath: /var/lib/docker/containers\n              name: docker\n              readOnly: true\n            - mountPath: /var/log/pods\n              name: pods\n              readOnly: true\n          env:\n            - name: HOSTNAME\n              valueFrom:\n                fieldRef:\n                  fieldPath: spec.nodeName\n          ports:\n            - containerPort: 3101\n              name: http-metrics\n          securityContext:\n            readOnlyRootFilesystem: true\n            runAsGroup: 0\n            runAsUser: 0\n          readinessProbe:\n            failureThreshold: 5\n            httpGet:\n              path: /ready\n              port: http-metrics\n            initialDelaySeconds: 10\n            periodSeconds: 10\n            successThreshold: 1\n            timeoutSeconds: 1\n          resources:\n            {}\n      nodeSelector:\n        {}\n      affinity:\n        {}\n      tolerations:\n        - effect: NoSchedule\n          key: node-role.kubernetes.io/master\n          operator: Exists\n      volumes:\n        - name: config\n          configMap:\n            name: loki-promtail\n        - name: run\n          hostPath:\n            path: /run/promtail\n        - hostPath:\n            path: /var/lib/docker/containers\n          name: docker\n        - hostPath:\n            path: /var/log/pods\n          name: pods\n---\n# Source: loki-stack/charts/loki/templates/statefulset.yaml\napiVersion: apps/v1\nkind: StatefulSet\nmetadata:\n  name: loki\n  namespace: default\n  labels:\n    app: loki\n    chart: loki-2.3.0\n    release: loki\n    heritage: Helm\n  annotations:\n    {}\nspec:\n  podManagementPolicy: OrderedReady\n  replicas: 1\n  selector:\n    matchLabels:\n      app: loki\n      release: loki\n  serviceName: loki-headless\n  updateStrategy:\n    type: RollingUpdate\n  template:\n    metadata:\n      labels:\n        app: loki\n        name: loki\n        release: loki\n      annotations:\n        checksum/config: bd8fbcc8819d25a9074dae66448ca310d0296146b3b25607d19651e3978859ad\n        prometheus.io/port: http-metrics\n        prometheus.io/scrape: \"true\"\n    spec:\n      serviceAccountName: loki\n      securityContext:\n        fsGroup: 10001\n        runAsGroup: 10001\n        runAsNonRoot: true\n        runAsUser: 10001\n      initContainers:\n        []\n      containers:\n        - name: loki\n          image: \"grafana/loki:2.1.0\"\n          imagePullPolicy: IfNotPresent\n          args:\n            - \"-config.file=/etc/loki/loki.yaml\"\n          volumeMounts:\n            - name: config\n              mountPath: /etc/loki\n            - name: storage\n              mountPath: \"/data\"\n              subPath: \n          ports:\n            - name: http-metrics\n              containerPort: 3100\n              protocol: TCP\n          livenessProbe:\n            httpGet:\n              path: /ready\n              port: http-metrics\n            initialDelaySeconds: 45\n          readinessProbe:\n            httpGet:\n              path: /ready\n              port: http-metrics\n            initialDelaySeconds: 45\n          resources:\n            {}\n          securityContext:\n            readOnlyRootFilesystem: true\n          env:\n      nodeSelector:\n        {}\n      affinity:\n        {}\n      tolerations:\n        []\n      terminationGracePeriodSeconds: 4800\n      volumes:\n        - name: config\n          secret:\n            secretName: loki\n        - name: storage\n          emptyDir: {}\n"
+name: loki
+namespace: default
+version: 1
